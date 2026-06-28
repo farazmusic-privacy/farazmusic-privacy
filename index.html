@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سیاست حفظ حریم خصوصی - Faraz Music</title>
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --surface: #1a1a2e;
+            --primary: #8B5CF6;
+            --text: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.7);
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 0 40px;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary), #00E5FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 16px;
+        }
+
+        .last-updated {
+            display: inline-block;
+            background: var(--surface);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-top: 16px;
+            border: 1px solid var(--border);
+        }
+
+        section {
+            background: var(--surface);
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border);
+            transition: border-color 0.3s;
+        }
+
+        section:hover {
+            border-color: var(--primary);
+        }
+
+        h2 {
+            font-size: 20px;
+            color: var(--primary);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .icon {
+            font-size: 24px;
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 8px 0;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border);
+            padding-right: 24px;
+            position: relative;
+        }
+
+        ul li:last-child {
+            border-bottom: none;
+        }
+
+        ul li::before {
+            content: "✓";
+            position: absolute;
+            right: 0;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        .highlight-box {
+            background: var(--primary);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .highlight-box p {
+            color: white;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .contact a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-secondary);
+            font-size: 13px;
+            border-top: 1px solid var(--border);
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 20px 16px; }
+            section { padding: 20px; }
+            h1 { font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">🎵</div>
+            <h1>سیاست حفظ حریم خصوصی</h1>
+            <p class="subtitle">Faraz Music Player</p>
+            <span class="last-updated">📅 آخرین بروزرسانی: ۱ تیر ۱۴۰۴ (۲۲ ژوئن ۲۰۲۵)</span>
+        </header>
+
+        <!-- Introduction -->
+        <section>
+            <h2><span class="icon">📋</span> مقدمه</h2>
+            <p>
+                به Faraz Music خوش آمدید. حریم خصوصی شما برای ما اهمیت زیادی دارد. 
+                این سیاستنامه توضیح می‌دهد که ما چه اطلاعاتی را جمع‌آوری می‌کنیم، 
+                چگونه از آن استفاده می‌کنیم و چه کنترلی بر روی داده‌های خود دارید.
+            </p>
+            <p>
+                Faraz Music یک پخش‌کننده موسیقی کاملاً <strong>آفلاین و محلی</strong> است. 
+                ما به هیچ سرور خارجی متصل نمی‌شویم و هیچ اطلاعاتی از دستگاه شما خارج نمی‌شود.
+            </p>
+        </section>
+
+        <!-- Data We Collect -->
+        <section>
+            <h2><span class="icon">📊</span> داده‌هایی که جمع‌آوری می‌کنیم</h2>
+            <ul>
+                <li><strong>فایل‌های صوتی:</strong> دسترسی به فایل‌های موسیقی روی دستگاه شما فقط برای پخش</li>
+                <li><strong>تاریخچه پخش:</strong> آهنگ‌هایی که پخش کرده‌اید (فقط روی دستگاه ذخیره می‌شود)</li>
+                <li><strong>علاقه‌مندی‌ها:</strong> آهنگ‌هایی که به لیست علاقه‌مندی اضافه کرده‌اید</li>
+                <li><strong>پلی‌لیست‌ها:</strong> لیست‌های پخشی که خودتان می‌سازید</li>
+                <li><strong>تنظیمات:</strong> تنظیمات اکولایزر، تم برنامه، زبان و سایر ترجیحات شما</li>
+            </ul>
+        </section>
+
+        <!-- Data We DON'T Collect -->
+        <section>
+            <h2><span class="icon">🚫</span> داده‌هایی که جمع‌آوری <u>نمی‌کنیم</u></h2>
+            <ul>
+                <li>اطلاعات شخصی (نام، ایمیل، شماره تلفن)</li>
+                <li>موقعیت مکانی (GPS)</li>
+                <li>مخاطبین</li>
+                <li>دوربین یا میکروفون (برای ضبط)</li>
+                <li>اطلاعات حساب کاربری</li>
+                <li>شناسه‌های تبلیغاتی</li>
+                <li>لاگ‌های خطا (Crash logs) - مگر با رضایت شما</li>
+            </ul>
+        </section>
+
+        <!-- How We Use Data -->
+        <section>
+            <h2><span class="icon">🔧</span> نحوه استفاده از داده‌ها</h2>
+            <ul>
+                <li>پخش موسیقی از فایل‌های صوتی روی دستگاه</li>
+                <li>نمایش تاریخچه پخش و آهنگ‌های اخیر</li>
+                <li>مدیریت لیست علاقه‌مندی‌ها و پلی‌لیست‌ها</li>
+                <li>ذخیره تنظیمات شخصی‌سازی شده (اکولایزر، تم، زبان)</li>
+                <li>بهبود تجربه کاربری بر اساس الگوی استفاده شما (فقط روی دستگاه)</li>
+            </ul>
+        </section>
+
+        <!-- Data Storage -->
+        <section>
+            <h2><span class="icon">💾</span> ذخیره‌سازی داده‌ها</h2>
+            <p>
+                <strong>تمام داده‌ها فقط روی دستگاه شما ذخیره می‌شوند.</strong>
+                ما از پایگاه داده محلی (Room Database) و تنظیمات اندروید (DataStore Preferences) 
+                برای ذخیره‌سازی استفاده می‌کنیم.
+            </p>
+            <p>
+                <strong>هیچ داده‌ای به سرورهای خارجی ارسال نمی‌شود.</strong>
+                هیچ سرویس ابری، همگام‌سازی آنلاین یا بکاپ ابری وجود ندارد.
+            </p>
+        </section>
+
+        <!-- Data Sharing -->
+        <section>
+            <h2><span class="icon">🤝</span> اشتراک‌گذاری داده‌ها</h2>
+            <p>
+                <strong>ما داده‌های شما را با هیچ شخص یا سازمانی به اشتراک نمی‌گذاریم.</strong>
+            </p>
+            <ul>
+                <li>با شرکت‌های تبلیغاتی به اشتراک گذاشته نمی‌شود</li>
+                <li>با تحلیل‌گران شخص ثالث به اشتراک گذاشته نمی‌شود</li>
+                <li>با هیچ نهاد دولتی به اشتراک گذاشته نمی‌شود</li>
+                <li>فروخته یا اجاره داده نمی‌شود</li>
+            </ul>
+        </section>
+
+        <!-- Permissions -->
+        <section>
+            <h2><span class="icon">🔐</span> مجوزهای دسترسی</h2>
+            <ul>
+                <li>
+                    <strong>READ_MEDIA_AUDIO / READ_EXTERNAL_STORAGE:</strong>
+                    برای خواندن فایل‌های صوتی از دستگاه شما. فقط فایل‌های صوتی خوانده می‌شوند.
+                </li>
+                <li>
+                    <strong>WRITE_EXTERNAL_STORAGE (اختیاری):</strong>
+                    برای ذخیره فایل‌های LRC (متن آهنگ) در کنار فایل‌های صوتی.
+                </li>
+                <li>
+                    <strong>INTERNET:</strong>
+                    فقط برای بارگذاری کاور آلبوم‌ها از کتابخانه Coil. 
+                    هیچ داده شخصی از طریق اینترنت ارسال نمی‌شود.
+                </li>
+                <li>
+                    <strong>POST_NOTIFICATIONS:</strong>
+                    برای نمایش نوتیفیکیشن پخش موسیقی در نوار اعلان.
+                </li>
+            </ul>
+        </section>
+
+        <!-- User Rights -->
+        <section>
+            <h2><span class="icon">✋</span> حقوق شما</h2>
+            <p>شما کنترل کامل بر روی داده‌های خود دارید:</p>
+            <ul>
+                <li>در هر زمان می‌توانید تاریخچه پخش را پاک کنید</li>
+                <li>می‌توانید علاقه‌مندی‌ها و پلی‌لیست‌ها را حذف کنید</li>
+                <li>با Clear Data از تنظیمات اندروید، تمام داده‌ها پاک می‌شوند</li>
+                <li>می‌توانید دسترسی به فایل‌ها را از تنظیمات اندروید قطع کنید</li>
+                <li>هیچ داده‌ای بدون رضایت شما جمع‌آوری نمی‌شود</li>
+            </ul>
+        </section>
+
+        <!-- Children -->
+        <section>
+            <h2><span class="icon">👶</span> کودکان</h2>
+            <p>
+                Faraz Music برای افراد زیر ۱۳ سال طراحی نشده است. 
+                ما آگاهانه اطلاعاتی از کودکان زیر ۱۳ سال جمع‌آوری نمی‌کنیم.
+            </p>
+        </section>
+
+        <!-- Third-Party -->
+        <section>
+            <h2><span class="icon">🔗</span> سرویس‌های شخص ثالث</h2>
+            <p>Faraz Music از کتابخانه‌های متن‌باز زیر استفاده می‌کند:</p>
+            <ul>
+                <li><strong>ExoPlayer (Media3):</strong> پخش‌کننده صوتی - توسط Google</li>
+                <li><strong>Coil:</strong> بارگذاری تصاویر - توسط Instacart</li>
+                <li><strong>Room Database:</strong> پایگاه داده محلی - توسط Google</li>
+                <li><strong>DataStore:</strong> ذخیره تنظیمات - توسط Google</li>
+            </ul>
+            <p style="margin-top: 12px;">
+                این کتابخانه‌ها به داده‌های شخصی شما دسترسی ندارند و فقط برای 
+                عملکرد داخلی برنامه استفاده می‌شوند.
+            </p>
+        </section>
+
+        <!-- Security -->
+        <section>
+            <h2><span class="icon">🛡️</span> امنیت</h2>
+            <p>
+                از آنجایی که تمام داده‌ها روی دستگاه شما ذخیره می‌شوند، 
+                امنیت داده‌ها به امنیت دستگاه اندروید شما بستگی دارد.
+                ما توصیه می‌کنیم:
+            </p>
+            <ul>
+                <li>دستگاه خود را با قفل صفحه محافظت کنید</li>
+                <li>سیستم‌عامل اندروید را به‌روز نگه دارید</li>
+                <li>برنامه را از منابع معتبر دانلود کنید</li>
+            </ul>
+        </section>
+
+        <!-- Changes -->
+        <section>
+            <h2><span class="icon">📝</span> تغییرات در سیاستنامه</h2>
+            <p>
+                ما ممکن است این سیاستنامه را هر از چند گاهی بروزرسانی کنیم. 
+                تغییرات مهم از طریق نوتیفیکیشن در برنامه به شما اطلاع داده خواهد شد.
+                توصیه می‌کنیم این صفحه را به صورت دوره‌ای مرور کنید.
+            </p>
+        </section>
+
+        <!-- Contact -->
+        <div class="contact">
+            <h2 style="color: var(--primary);">📧 تماس با ما</h2>
+            <p style="color: var(--text-secondary);">
+                اگر سوالی درباره این سیاستنامه دارید، با ما تماس بگیرید:
+            </p>
+            <p style="font-size: 18px; margin-top: 12px;">
+                📧 <a href="mailto:farazmusicapp@gmail.com">farazmusicapp@gmail.com</a>
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>© ۲۰۲۵ Faraz Music Player. تمام حقوق محفوظ است.</p>
+            <p style="margin-top: 8px;">ساخته شده با ❤️ برای عاشقان موسیقی</p>
+        </footer>
+    </div>
+</body>
+</html>
+```
+
+
+
